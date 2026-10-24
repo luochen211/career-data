@@ -1,0 +1,11 @@
+{
+  "name": "career-data",
+  "private": true,
+  "type": "module",
+  "description": "Public career and income record, plus interview preparation and review methods",
+  "scripts": {
+    "test": "node --test",
+    "interview:score": "node scripts/score-interview.mjs",
+    "interview:outcome": "node scripts/estimate-interview-outcome.mjs"
+  }
+}

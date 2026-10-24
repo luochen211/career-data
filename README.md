@@ -28,6 +28,8 @@
 | `decisions/<yyyy-mm>-<slug>.md` | 每个长期决策一个文件 |
 | `modes/review.md` | 月度复盘的固定问题 |
 | `modes/interview-prep.md` | 面试前准备：从 JD 生成准备手册的方法，手册本身放私有仓库 |
+| `modes/interview-review.md` | 面试后复盘与结果追踪：表现复盘和雇主结果分开，结果只认已发生的下一步动作 |
+| `scripts/`、`templates/`、`tests/` | 复盘打分和结果追踪脚本、输入模板与测试，`npm test` 运行 |
 | `AGENTS.md` | 给 AI Agent 的写入规则，Claude Code / Codex 进目录就会读 |
 
 ## 怎么用
@@ -39,7 +41,7 @@ cd my-career
 rm career-log.md income/*.md
 ```
 
-然后在这个目录里打开你的 AI Agent，说"记一条日志"或"做本月复盘"，它会按 `AGENTS.md` 的规则写到对应文件。拿到面试时，把 JD 贴给它，说"按 interview-prep 做面试前准备"。
+然后在这个目录里打开你的 AI Agent，说"记一条日志"或"做本月复盘"，它会按 `AGENTS.md` 的规则写到对应文件。拿到面试时，把 JD 贴给它，说"按 interview-prep 做面试前准备"；面试结束后，把文字记录给它，说"按 interview-review 复盘"。
 
 ## 配套
 

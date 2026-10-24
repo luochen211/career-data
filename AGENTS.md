@@ -12,6 +12,7 @@ A public, append-only record of one person's career and income, plus the method 
 | One long-running decision | `decisions/<yyyy-mm>-<slug>.md` | Premise, options, choice and reasoning, expected outcome with review dates, reviews appended. Never delete original reasoning. |
 | Monthly review | `modes/review.md` defines the questions; answers go into `income/` and the relevant decision file | Run once a month. |
 | Interview preparation | `modes/interview-prep.md` defines the method; the pack goes to `interview-prep/<company>-<role>/` in the owner's private data root | Run after an interview is scheduled. Only a redacted event line goes into `career-log.md`. |
+| Interview review and outcome | `modes/interview-review.md` defines the method; `scripts/score-interview.mjs` and `scripts/estimate-interview-outcome.mjs` run it from the inputs in `templates/`; transcripts and results go next to the prep pack in the private data root | Run after each round. Coaching scores never predict the employer's decision. Run `npm test` after changing a script. |
 
 ## Log entry format
 
