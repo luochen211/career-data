@@ -11,6 +11,7 @@ A public, append-only record of one person's career and income, plus the method 
 | One job | `employment/<company>.md` | Responsibilities, outcomes, compensation, how it felt. Update in place; log the change in `career-log.md`. |
 | One long-running decision | `decisions/<yyyy-mm>-<slug>.md` | Premise, options, choice and reasoning, expected outcome with review dates, reviews appended. Never delete original reasoning. |
 | Monthly review | `modes/review.md` defines the questions; answers go into `income/` and the relevant decision file | Run once a month. |
+| Interview preparation | `modes/interview-prep.md` defines the method; the pack goes to `interview-prep/<company>-<role>/` in the owner's private data root | Run after an interview is scheduled. Only a redacted event line goes into `career-log.md`. |
 
 ## Log entry format
 
@@ -26,5 +27,5 @@ A public, append-only record of one person's career and income, plus the method 
 1. Never invent or round numbers. Unknown means `待确认`.
 2. Keep facts and feelings separate: facts in `income/` and the tables of `employment/`, feelings in `career-log.md` or the `感受` section.
 3. This repository is public. Never write the employer's name, absolute salary or income amounts, unannounced plans, other people's names, phone numbers, emails, private repository names, or anything learned under confidentiality. Refer to companies by industry and people by role. Those facts live in the owner's private repository.
-4. Job-search operations (CV, trackers, evaluation reports, tailored CVs, recruiter contacts) do not belong here. They stay in a private career-ops data root.
+4. Job-search operations (CV, trackers, evaluation reports, tailored CVs, recruiter contacts, interview prep packs and transcripts) do not belong here. They stay in a private career-ops data root. Only the methods in `modes/` are public.
 5. Commit after each session of changes with a Conventional Commit message and push.
